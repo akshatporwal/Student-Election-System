@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dashboard.master.cs" Inherits="StudentElectionSystem.Dashboard" %>
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title><asp:ContentPlaceHolder ID="CpTitle" runat="server"></asp:ContentPlaceHolder></title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+<style>
+    
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin: 50px auto;
+  width: 500px;
+  height: 40px;
+}
+
+/* list styles */
+ul {
+  width: 700px;
+  margin: 0px auto;
+  overflow: auto;
+  list-style: none;
+  text-align:center;
+}
+
+li {
+  font-family: Open Sans, sans-serif;
+  font-size: 20px;
+  font-weight:300;
+  float: left;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-right: 1px solid #999;
+}
+
+li:last-child {
+  border: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #808080;
+  
+ 
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+
+li a:hover {
+  color: #333;
+  text-decoration:none;
+}
+
+l/*i.active a {
+  color: #F15A24;
+  font-weight: normal;
+  text-decoration:none;
+}*/
+</style>
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+
+
+
+    
+    <nav>
+      <ul>
+        <li><asp:HyperLink ID="Hyper1" runat="server" NavigateUrl="~/StudentPresident.aspx" >Student President</asp:HyperLink></li>
+        <li><asp:HyperLink ID="Hyper2" runat="server" NavigateUrl="~/StudentTreasurer.aspx">Student Treasurer</asp:HyperLink></li>
+        <li><asp:HyperLink ID="Hyper3" runat="server" NavigateUrl="~/EventHead.aspx">Events Head</asp:HyperLink></li>
+     </ul>
+    </nav>
+    
+      <asp:ContentPlaceHolder ID="CpContent" runat="server"></asp:ContentPlaceHolder>
+  </body>
+ </html>
+
+<!-- partial -->
+  
+
+
+
